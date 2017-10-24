@@ -1,11 +1,13 @@
 public class ElectricCar implements Car {
 
-    public ElectricCar(){
-        createCar();
+    protected ElectricCar() {
     }
+
     @Override
-    public void createCar() {
+    public static createCar() {
         System.out.println("a new electric car has been created");
+        return new ElectricCar();
+
 
     }
 }

@@ -1,7 +1,7 @@
 public class CarFactory {
     public Car createCar(String whatCar) {
         if (whatCar.equals("electric")) {
-            return new ElectricCar();
+            return ElectricCar.createCar;
         } else if (whatCar.equals("petrol")) {
             return new PetrolCar();
 

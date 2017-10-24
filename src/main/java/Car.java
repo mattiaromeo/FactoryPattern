@@ -1,4 +1,6 @@
 public interface Car {
-    void createCar();
+    public static Car createCar(){
+        return null;
+    };
 
 }

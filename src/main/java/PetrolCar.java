@@ -1,10 +1,13 @@
 public class PetrolCar implements Car {
-    public PetrolCar(){
+    protected PetrolCar() {
         createCar();
     }
+
     @Override
-    public void createCar() {
+    public Car createCar() {
+
         System.out.println("a new petrol car has been created");
+        return new PetrolCar();
 
     }
 }
